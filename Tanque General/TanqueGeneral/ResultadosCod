@@ -1,0 +1,15 @@
+set ylabel "Cuentas"
+set xlabel "#Fotoelectrones"
+set title "Tanque General"
+
+plot[1:500] 'CerenGenElectAll.dat' u 0:1 w histeps lw 3 t "Total Particulas"
+replot[1:500] 'CerenGenElectElec.dat' u 0:1 w histeps lw 3 t "Electrones"
+replot[1:500] 'CerenGenElectGamm.dat' u 0:1 w histeps lw 3 t "Gammas"
+replot[1:500] 'CerenGenElectHadr.dat' u 0:1 w histeps lw 3 t "Hadrones"
+replot[1:500] 'CerenGenElectMuon.dat' u 0:1 w histeps lw 3 t "Muones"
+replot[1:500] 'CerenGenElectNeut.dat' u 0:1 w histeps lw 3 t "Neutrones"
+
+
+
+
+
